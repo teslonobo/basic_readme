@@ -16,8 +16,9 @@ A quick efficent way to create README and License .md files with zero dependenci
 ### Installing
 
 Easiest way is by cloning the repo!
-
-* git clone https://github.com/teslonobo/basic_readme.git
+~~~
+git clone https://github.com/teslonobo/basic_readme.git
+~~~
 
 ### Executing program
 
@@ -28,17 +29,18 @@ Its that simple!
 ## Help/Support
 
 Any advise for common problems or issues reach out to the maintainer at the following place:
-*The email which is located in GitHub profile.
+* The email which is located in GitHub profile.
 
 ## Roadmap
 
-This project is open-source so, creating templates to add to the LICENSE and README Template directories would be great.
-But future features include but not limited to:
-    *adding error handling
-    *adding logging
-    *adding image/gif support
-    *updating to utilize Html markdown  
-    *updating license and readme templates
+This project is open-source so, creating templates to add to the LICENSE and README Template directories would be great. But any advice, collab, would be cool.
+
+### Future features include but not limited to:
+    * adding error handling
+    * adding logging
+    * adding image/gif support
+    * updating to utilize Html markdown  
+    * updating license and readme templates
 
 ## Authors
 
@@ -51,7 +53,7 @@ Teslonobo
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE file for details
 
 ## Acknowledgments
 
