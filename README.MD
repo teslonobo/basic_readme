@@ -29,7 +29,7 @@ Its that simple!
 ## Help/Support
 
 Any advise for common problems or issues reach out to the maintainer at the following place:
-* The email which is located in GitHub profile.
+* The email which is located in [GitHub profile](https://github.com/teslonobo)
 
 ## Roadmap
 
