@@ -35,12 +35,12 @@ Any advise for common problems or issues reach out to the maintainer at the foll
 
 This project is open-source so, creating templates to add to the LICENSE and README Template directories would be great. But any advice, collab, would be cool.
 
-### Future features include but not limited to:
-    * adding error handling
-    * adding logging
-    * adding image/gif support
-    * updating to utilize Html markdown  
-    * updating license and readme templates
+- Future features include but not limited to:
+   - adding error handling
+   - adding logging
+   - adding image/gif support
+   - updating to utilize Html markdown  
+   - updating license and readme templates
 
 ## Authors
 
