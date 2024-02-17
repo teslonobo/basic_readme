@@ -11,26 +11,31 @@
 ### Dependencies
 
 * {Prerequisites}
-* Windows 10
+* {OS}
 
 ### Installing
 
-* git clone https://github.com/{Github Username}/{Repo Name}.git
+{Install instructions}
+
+~~~
+git clone https://github.com/{Github Username}/{Repo Name}.git
+~~~
 
 ### Executing program
 
-* How to run the program
+* {Execution Instructions}
 
-* {Instructions}
 
 ## Help/Support
 
 Any advise for common problems or issues reach out to the maintainer at the following place:
-*The email which is located in GitHub profile 
+* The email which is located in [GitHub profile](https://github.com/{Github Username}) 
 
 ## Roadmap
 
 {Roadmap overview}
+### Future features include but not limited to:
+
 
 ## Authors
 
@@ -48,5 +53,4 @@ This project is licensed under the {License} License - see the LICENSE.md file f
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [{Inspiration Repo1}]({Inspiration Repo1 link})
-* [{Inspiration Repo2}]({Inspiration Repo2 link})
+* [{Inspiration RepoName}]({Inspiration Repo link})

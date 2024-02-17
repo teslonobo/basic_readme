@@ -33,7 +33,7 @@ def fill_template(custom_template):
                 license_placeholders = [placeholder[1] for placeholder in string.Formatter().parse(lines) if placeholder[1]]
                 license_inputs = {placeholder: input(f'Enter a {placeholder}: ') for placeholder in license_placeholders}
                 custom_license_filled = lines.format(**license_inputs)
-                with open('License','w') as f:
+                with open('License.md','w') as f:
                     f.write(custom_license_filled)
 
         custom_temp_filled = line.format(**user_inputs)
