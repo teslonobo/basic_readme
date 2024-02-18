@@ -22,7 +22,7 @@ git clone https://github.com/teslonobo/basic_readme.git
 
 ### Executing program
 
-* run Template_Readme.py
+* underdevelopment
 
 Its that simple!
 
@@ -47,6 +47,10 @@ This project is open-source so, creating templates to add to the LICENSE and REA
 Teslonobo  
 
 ## Version History
+* 0.101
+    * converted to object-orientated and modulized into Github_Blueprints
+    * introduced a list styling to licenses for easier selection
+    * added option for multiple acknowledgement 
 
 * 0.1
     * Initial Release

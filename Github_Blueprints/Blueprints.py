@@ -32,6 +32,7 @@ class Github:
 
     def fill_template(self,github_username,repository):
         custom_template = self.temp
+        template = self.temp[0]
         my_license_choices = self.license_choices()
         all_acknowledgements = []
 
@@ -58,27 +59,37 @@ class Github:
                     elif placeholder == 'Inspiration RepoName':
                         acknowledgements = int(input('How many shout outs would you like to give: '))                
                         if isinstance(acknowledgements,int):
-                            all_acknowledgements.append(acknowledgements) 
-                            for i in range(acknowledgements):
+                            all_acknowledgements.append(acknowledgements)
+                        if all_acknowledgements[0] == 1: 
+                            user_inputs[f'Inspiration RepoName'] = input(f'Enter a Inspiration RepoName: ')
+                            user_inputs[f'Inspiration Repo link'] = input(f'Enter a Inspiration Repo link: ') 
+                
+                        elif all_acknowledgements[0] >= 2 :
+                            template = self.temp[0].replace("* [{Inspiration RepoName}]", "").replace("({Inspiration Repo link})", "")
+                            for i in range(all_acknowledgements[0]):
                                 user_inputs[f'Inspiration RepoName{i+1}'] = input(f'Enter a Inspiration RepoName{i+1}: ')
-                    elif placeholder == 'Inspiration Repo link':
-                        for i in range(all_acknowledgements[0]):
-                            user_inputs[f'Inspiration Repo link{i+1}'] = input(f'Enter a Inspiration Repo link{i+1}: ')
+                                user_inputs[f'Inspiration Repo link{i+1}'] = input(f'Enter a Inspiration Repo link{i+1}: ')
+                                template += "* [" + "{Inspiration RepoName" + str(i+1) + "}]"+ "({Inspiration Repo link" +str(i+1)+"})\n"
 
+                    elif placeholder == 'Inspiration Repo link' :
+                        pass
                     else:
                         user_inputs[placeholder] = input(f'Enter a {placeholder}: ')
-
             except KeyboardInterrupt:
-                break
-            print(user_inputs)
+                exit(0)
+
+            #print(user_inputs)
+            print(template)
+
             projectname = user_inputs['Project Title']
             if not os.path.exists(projectname):
                 os.mkdir(projectname)
             
             license_temp = self.load_license(user_inputs['License'])
             self.write_license(license_temp,projectname)
-
-            custom_temp_filled = line.format(**user_inputs)
-            
+   
+            custom_temp_filled = template.format(**user_inputs)
+        
             with open(os.path.join(projectname,'README.md'),'w') as f:
                 f.write(custom_temp_filled)
+                    
