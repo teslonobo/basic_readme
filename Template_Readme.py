@@ -2,7 +2,7 @@ import string
 import os
 
 def load_template():
-    template = os.path.join('README_Template','readme-template.txt')
+    template = os.path.join('Data\\README_Template','readme-template.txt')
     custom_template = []
     with open(template,'r') as f:
         mytemplate = f.read()
@@ -10,11 +10,11 @@ def load_template():
         return custom_template
     
 def license_choices():
-    filename = [f.split('.')[0] for f in os.listdir('LICENSE_Template')]
+    filename = [f.split('.')[0] for f in os.listdir('Data\\LICENSE_Template')]
     return filename
 
 def load_license(filename):
-    license_template = os.path.join('LICENSE_Template',f'{filename}.txt')
+    license_template = os.path.join('Data\\LICENSE_Template',f'{filename}.txt')
     custom_license = []
     with open(license_template,'r') as f:
         mytemplate = f.read()

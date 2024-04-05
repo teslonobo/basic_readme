@@ -4,7 +4,7 @@ Basic templating for README and License
 
 ## Description
 
-A quick efficent way to create README and License .md files with zero dependencies!
+A quick efficent way to create README and License .md files with zero dependencies! 
 
 ## Getting Started
 
@@ -16,15 +16,14 @@ A quick efficent way to create README and License .md files with zero dependenci
 ### Installing
 
 Easiest way is by cloning the repo!
+
 ~~~
 git clone https://github.com/teslonobo/basic_readme.git
 ~~~
 
 ### Executing program
 
-* underdevelopment
-
-Its that simple!
+This is currently underdevelopment but in the meantime, you can use the Cli_v1 and simply pass username and reponame or run test in a python enviornment. Its that simple!
 
 ## Help/Support
 
@@ -33,7 +32,7 @@ Any advise for common problems or issues reach out to the maintainer at the foll
 
 ## Roadmap
 
-This project is open-source so, creating templates to add to the LICENSE and README Template directories would be great. But any advice, collab, would be cool.
+This project is open-source so anybody can get in on creating templates LICENSE and README Template, adding and removing features. But any advice, collab, would be awesome.
 
 - Future features include but not limited to:
    - adding error handling
@@ -47,6 +46,12 @@ This project is open-source so, creating templates to add to the LICENSE and REA
 Teslonobo  
 
 ## Version History
+* 0.102
+    * created Cli version
+    * added more licenses 
+    * centralized Data for License and README templates
+    * currently working on GUI version
+
 * 0.101
     * converted to object-orientated and modulized into Github_Blueprints
     * introduced a list styling to licenses for easier selection

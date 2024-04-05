@@ -1,3 +1,4 @@
 from Github_Blueprints.Blueprints import Github
-from Github_Blueprints.Blueprints import os
-from Github_Blueprints.Blueprints import string
+from Github_Blueprints.tkWrapper_v1 import Window
+from Github_Blueprints.tkWrapper_v1 import WFrame
+from Github_Blueprints.tkWrapper_v1 import WButtons

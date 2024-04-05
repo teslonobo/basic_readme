@@ -3,7 +3,7 @@ import string
 
 class Github:
     def __init__(self):
-        readme_template = os.path.join('README_Template','readme-template.txt')
+        readme_template = os.path.join('Data\\README_Template','readme-template.txt')
         custom_template = []
         with open(readme_template,'r') as f:
             mytemplate = f.read()
@@ -11,11 +11,11 @@ class Github:
         self.temp = custom_template
     
     def license_choices(self):
-        filename = [f.split('.')[0] for f in os.listdir('LICENSE_Template')]
+        filename = [f.split('.')[0] for f in os.listdir('Data\\LICENSE_Template')]
         return filename
 
     def load_license(self,filename):
-        license_template = os.path.join('LICENSE_Template',f'{filename}.txt')
+        license_template = os.path.join('Data\\LICENSE_Template',f'{filename}.txt')
         custom_license = []
         with open(license_template,'r') as f:
             mytemplate = f.read()
