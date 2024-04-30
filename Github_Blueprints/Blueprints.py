@@ -47,6 +47,7 @@ class Github:
                         print('----------------')
                         for i, license in enumerate(my_license_choices):
                             print(f'{i+1}. {license}')
+                        print()
                         choice = int(input('Enter the number associated with your license choice: '))
                         if isinstance(choice,int):
                             user_inputs[placeholder] = my_license_choices[choice-1]
@@ -60,7 +61,10 @@ class Github:
                         acknowledgements = int(input('How many shout outs would you like to give: '))                
                         if isinstance(acknowledgements,int):
                             all_acknowledgements.append(acknowledgements)
-                        if all_acknowledgements[0] == 1: 
+                        if all_acknowledgements[0] == 0:
+                            template = self.temp[0].replace("* [{Inspiration RepoName}]", "").replace("({Inspiration Repo link})", "")
+                            template == 'NO ACKNOWLEDGEMENTS'
+                        elif all_acknowledgements[0] == 1: 
                             user_inputs[f'Inspiration RepoName'] = input(f'Enter a Inspiration RepoName: ')
                             user_inputs[f'Inspiration Repo link'] = input(f'Enter a Inspiration Repo link: ') 
                 
